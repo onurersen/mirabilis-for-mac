@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1909" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="QuickNoteViewController" customModule="Mirabilis" customModuleProvider="target">
+            <connections>
+                <outlet property="autoLaunchCheckbox" destination="YVN-Pl-gUM" id="es7-R9-asb"/>
+                <outlet property="noteTextView" destination="NAc-kL-nLX" id="IQG-le-1OJ"/>
+                <outlet property="searchField" destination="qbs-Il-JGX" id="fDW-k6-O4Q"/>
+                <outlet property="searchFieldCell" destination="qbs-Il-JGX" id="mVv-hj-nJs"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="536" height="495"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xi4-Zt-r6k">
+                    <rect key="frame" x="9" y="41" width="516" height="442"/>
+                    <clipView key="contentView" ambiguous="YES" id="tsm-fa-ASh">
+                        <rect key="frame" x="0.0" y="0.0" width="516" height="442"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="NAc-kL-nLX">
+                                <rect key="frame" x="0.0" y="0.0" width="516" height="442"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="minSize" width="516" height="442"/>
+                                <size key="maxSize" width="519" height="10000000"/>
+                                <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <size key="minSize" width="516" height="442"/>
+                                <size key="maxSize" width="519" height="10000000"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="Fc9-Cd-SB1">
+                        <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="vTc-9p-ecl">
+                        <rect key="frame" x="500" y="0.0" width="16" height="442"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HFk-xI-CWs">
+                    <rect key="frame" x="472" y="5" width="59" height="32"/>
+                    <buttonCell key="cell" type="push" bezelStyle="rounded" image="terminate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="hxO-fV-nzF">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="quit:" target="-2" id="wH0-OY-ltT"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="11q-nQ-1Pa">
+                    <rect key="frame" x="413" y="5" width="59" height="32"/>
+                    <buttonCell key="cell" type="push" bezelStyle="rounded" image="about" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="t11-cD-Qgo">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="about:" target="-2" id="OQD-g1-uSo"/>
+                    </connections>
+                </button>
+                <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ETS-oh-nZ4">
+                    <rect key="frame" x="9" y="11" width="202" height="22"/>
+                    <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" baseWritingDirection="leftToRight" alignment="left" placeholderString="Search in notes..." usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" sendsWholeSearchString="YES" id="qbs-Il-JGX">
+                        <font key="font" size="12" name="AlNile"/>
+                        <color key="textColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                    </searchFieldCell>
+                    <connections>
+                        <action selector="controlTextDidChange_Enter:" target="-2" id="aF4-IA-74P"/>
+                    </connections>
+                </searchField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M3v-gJ-7aL">
+                    <rect key="frame" x="354" y="5" width="59" height="32"/>
+                    <buttonCell key="cell" type="push" bezelStyle="rounded" image="export" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PN3-XX-yqJ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="export:" target="-2" id="U8H-mH-Zd3"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YVN-Pl-gUM">
+                    <rect key="frame" x="225" y="10" width="129" height="24"/>
+                    <buttonCell key="cell" type="check" title="Launch at login" bezelStyle="regularSquare" imagePosition="left" inset="2" id="gfi-Av-sgP">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setAutoLaunch:" target="-2" id="S0E-k3-KMH"/>
+                    </connections>
+                </button>
+                <box horizontalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="hF4-5e-Olw">
+                    <rect key="frame" x="217" y="11" width="5" height="22"/>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+                <box horizontalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="hDQ-e5-3qF">
+                    <rect key="frame" x="349" y="11" width="5" height="22"/>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+            </subviews>
+            <point key="canvasLocation" x="375" y="495.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="about" width="384" height="384"/>
+        <image name="export" width="512" height="512"/>
+        <image name="terminate" width="18" height="18"/>
+    </resources>
+</document>

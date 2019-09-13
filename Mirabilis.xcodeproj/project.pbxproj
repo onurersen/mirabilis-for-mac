@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC04E13D1D774CC2002EE0D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC04E13C1D774CC2002EE0D9 /* AppDelegate.m */; };
+		BC04E1401D774CC2002EE0D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC04E13F1D774CC2002EE0D9 /* main.m */; };
+		BC04E1421D774CC2002EE0D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC04E1411D774CC2002EE0D9 /* Assets.xcassets */; };
+		BC04E1451D774CC2002EE0D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC04E1431D774CC2002EE0D9 /* MainMenu.xib */; };
+		BC04E14A1D774D33002EE0D9 /* AutoLaunchHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC04E1391D774CC2002EE0D9 /* AutoLaunchHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC2F9AB51D5CB38E004CEB8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F9AB41D5CB38E004CEB8B /* AppDelegate.swift */; };
+		BC2F9AB71D5CB38E004CEB8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2F9AB61D5CB38E004CEB8B /* Assets.xcassets */; };
+		BC2F9AC21D5CBA58004CEB8B /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F9AC11D5CBA58004CEB8B /* EventMonitor.swift */; };
+		BC2F9AC71D5CBB5E004CEB8B /* QuickNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F9AC51D5CBB5E004CEB8B /* QuickNoteViewController.swift */; };
+		BC2F9AC81D5CBB5E004CEB8B /* QuickNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2F9AC61D5CBB5E004CEB8B /* QuickNoteViewController.xib */; };
+		BC93ECDB1D6E1FDC00CACB6D /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC93ECDA1D6E1FDC00CACB6D /* StreamReader.swift */; };
+		BCA21D671D7413E0004E7261 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA21D661D7413E0004E7261 /* search.png */; };
+		BCA21D691D7418BB004E7261 /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA21D681D7418BB004E7261 /* exit.png */; };
+		BCA21D6B1D74581B004E7261 /* export.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA21D6A1D74581B004E7261 /* export.png */; };
+		BCA87C921D6D893D001CEDF7 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCA87C911D6D893D001CEDF7 /* Settings.plist */; };
+		BCA87C951D6DC453001CEDF7 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA87C931D6DC453001CEDF7 /* icon.png */; };
+		BCA87C961D6DC453001CEDF7 /* terminate.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA87C941D6DC453001CEDF7 /* terminate.png */; };
+		BCA87C9C1D6DCC5A001CEDF7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA87C9A1D6DCC5A001CEDF7 /* MainMenu.xib */; };
+		BCA87C9E1D6DCE09001CEDF7 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA87C9D1D6DCE09001CEDF7 /* about.png */; };
+		BCD05C221D6C47F600B034E4 /* LineNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD05C211D6C47F600B034E4 /* LineNumberView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC04E1331D774BB8002EE0D9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				BC04E14A1D774D33002EE0D9 /* AutoLaunchHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BC04E1391D774CC2002EE0D9 /* AutoLaunchHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLaunchHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC04E13B1D774CC2002EE0D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC04E13C1D774CC2002EE0D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC04E13F1D774CC2002EE0D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC04E1411D774CC2002EE0D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC04E1441D774CC2002EE0D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BC04E1461D774CC2002EE0D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2F9AB11D5CB38D004CEB8B /* Mirabilis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mirabilis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2F9AB41D5CB38E004CEB8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC2F9AB61D5CB38E004CEB8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC2F9ABB1D5CB38E004CEB8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2F9AC11D5CBA58004CEB8B /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = ../EventMonitor.swift; sourceTree = "<group>"; };
+		BC2F9AC51D5CBB5E004CEB8B /* QuickNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuickNoteViewController.swift; path = ../QuickNoteViewController.swift; sourceTree = "<group>"; };
+		BC2F9AC61D5CBB5E004CEB8B /* QuickNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuickNoteViewController.xib; path = ../QuickNoteViewController.xib; sourceTree = "<group>"; };
+		BC93ECDA1D6E1FDC00CACB6D /* StreamReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
+		BCA21D661D7413E0004E7261 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = SOURCE_ROOT; };
+		BCA21D681D7418BB004E7261 /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit.png; sourceTree = SOURCE_ROOT; };
+		BCA21D6A1D74581B004E7261 /* export.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = export.png; sourceTree = SOURCE_ROOT; };
+		BCA87C911D6D893D001CEDF7 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Settings.plist; path = ../Settings.plist; sourceTree = "<group>"; };
+		BCA87C931D6DC453001CEDF7 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
+		BCA87C941D6DC453001CEDF7 /* terminate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terminate.png; sourceTree = SOURCE_ROOT; };
+		BCA87C9B1D6DCC5A001CEDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Mirabilis/Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BCA87C9D1D6DCE09001CEDF7 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = SOURCE_ROOT; };
+		BCD05C211D6C47F600B034E4 /* LineNumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineNumberView.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC04E1361D774CC2002EE0D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2F9AAE1D5CB38D004CEB8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC04E13A1D774CC2002EE0D9 /* AutoLaunchHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BC04E13B1D774CC2002EE0D9 /* AppDelegate.h */,
+				BC04E13C1D774CC2002EE0D9 /* AppDelegate.m */,
+				BC04E1411D774CC2002EE0D9 /* Assets.xcassets */,
+				BC04E1431D774CC2002EE0D9 /* MainMenu.xib */,
+				BC04E1461D774CC2002EE0D9 /* Info.plist */,
+				BC04E13E1D774CC2002EE0D9 /* Supporting Files */,
+			);
+			path = AutoLaunchHelper;
+			sourceTree = "<group>";
+		};
+		BC04E13E1D774CC2002EE0D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC04E13F1D774CC2002EE0D9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC2F9AA81D5CB38D004CEB8B = {
+			isa = PBXGroup;
+			children = (
+				BC2F9AB31D5CB38D004CEB8B /* Mirabilis */,
+				BC04E13A1D774CC2002EE0D9 /* AutoLaunchHelper */,
+				BC2F9AB21D5CB38D004CEB8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC2F9AB21D5CB38D004CEB8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC2F9AB11D5CB38D004CEB8B /* Mirabilis.app */,
+				BC04E1391D774CC2002EE0D9 /* AutoLaunchHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC2F9AB31D5CB38D004CEB8B /* Mirabilis */ = {
+			isa = PBXGroup;
+			children = (
+				BCA87C991D6DCC24001CEDF7 /* Utility */,
+				BCA87C981D6DCC16001CEDF7 /* Config */,
+				BCA87C971D6DCC06001CEDF7 /* ViewController */,
+				BC2F9AC91D5DB4BD004CEB8B /* Images */,
+				BC2F9AB61D5CB38E004CEB8B /* Assets.xcassets */,
+				BC2F9AB41D5CB38E004CEB8B /* AppDelegate.swift */,
+				BCA87C9A1D6DCC5A001CEDF7 /* MainMenu.xib */,
+			);
+			path = Mirabilis;
+			sourceTree = "<group>";
+		};
+		BC2F9AC91D5DB4BD004CEB8B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BCA21D6A1D74581B004E7261 /* export.png */,
+				BCA21D681D7418BB004E7261 /* exit.png */,
+				BCA21D661D7413E0004E7261 /* search.png */,
+				BCA87C9D1D6DCE09001CEDF7 /* about.png */,
+				BCA87C931D6DC453001CEDF7 /* icon.png */,
+				BCA87C941D6DC453001CEDF7 /* terminate.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		BCA87C971D6DCC06001CEDF7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BC2F9AC51D5CBB5E004CEB8B /* QuickNoteViewController.swift */,
+				BC2F9AC61D5CBB5E004CEB8B /* QuickNoteViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		BCA87C981D6DCC16001CEDF7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BC2F9ABB1D5CB38E004CEB8B /* Info.plist */,
+				BCA87C911D6D893D001CEDF7 /* Settings.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		BCA87C991D6DCC24001CEDF7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BCD05C211D6C47F600B034E4 /* LineNumberView.swift */,
+				BC2F9AC11D5CBA58004CEB8B /* EventMonitor.swift */,
+				BC93ECDA1D6E1FDC00CACB6D /* StreamReader.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC04E1381D774CC2002EE0D9 /* AutoLaunchHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC04E1471D774CC2002EE0D9 /* Build configuration list for PBXNativeTarget "AutoLaunchHelper" */;
+			buildPhases = (
+				BC04E1351D774CC2002EE0D9 /* Sources */,
+				BC04E1361D774CC2002EE0D9 /* Frameworks */,
+				BC04E1371D774CC2002EE0D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoLaunchHelper;
+			productName = AutoLaunchHelper;
+			productReference = BC04E1391D774CC2002EE0D9 /* AutoLaunchHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC2F9AB01D5CB38D004CEB8B /* Mirabilis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC2F9ABE1D5CB38E004CEB8B /* Build configuration list for PBXNativeTarget "Mirabilis" */;
+			buildPhases = (
+				BC2F9AAD1D5CB38D004CEB8B /* Sources */,
+				BC2F9AAE1D5CB38D004CEB8B /* Frameworks */,
+				BC2F9AAF1D5CB38D004CEB8B /* Resources */,
+				BC04E1331D774BB8002EE0D9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mirabilis;
+			productName = Mirabilis;
+			productReference = BC2F9AB11D5CB38D004CEB8B /* Mirabilis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC2F9AA91D5CB38D004CEB8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Berat Onur Ersen";
+				TargetAttributes = {
+					BC04E1381D774CC2002EE0D9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = T7RZ9R624Y;
+					};
+					BC2F9AB01D5CB38D004CEB8B = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = T7RZ9R624Y;
+					};
+				};
+			};
+			buildConfigurationList = BC2F9AAC1D5CB38D004CEB8B /* Build configuration list for PBXProject "Mirabilis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC2F9AA81D5CB38D004CEB8B;
+			productRefGroup = BC2F9AB21D5CB38D004CEB8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC2F9AB01D5CB38D004CEB8B /* Mirabilis */,
+				BC04E1381D774CC2002EE0D9 /* AutoLaunchHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC04E1371D774CC2002EE0D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC04E1421D774CC2002EE0D9 /* Assets.xcassets in Resources */,
+				BC04E1451D774CC2002EE0D9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2F9AAF1D5CB38D004CEB8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2F9AB71D5CB38E004CEB8B /* Assets.xcassets in Resources */,
+				BCA21D6B1D74581B004E7261 /* export.png in Resources */,
+				BC2F9AC81D5CBB5E004CEB8B /* QuickNoteViewController.xib in Resources */,
+				BCA21D691D7418BB004E7261 /* exit.png in Resources */,
+				BCA87C951D6DC453001CEDF7 /* icon.png in Resources */,
+				BCA21D671D7413E0004E7261 /* search.png in Resources */,
+				BCA87C961D6DC453001CEDF7 /* terminate.png in Resources */,
+				BCA87C921D6D893D001CEDF7 /* Settings.plist in Resources */,
+				BCA87C9C1D6DCC5A001CEDF7 /* MainMenu.xib in Resources */,
+				BCA87C9E1D6DCE09001CEDF7 /* about.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC04E1351D774CC2002EE0D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC04E1401D774CC2002EE0D9 /* main.m in Sources */,
+				BC04E13D1D774CC2002EE0D9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2F9AAD1D5CB38D004CEB8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC93ECDB1D6E1FDC00CACB6D /* StreamReader.swift in Sources */,
+				BC2F9AB51D5CB38E004CEB8B /* AppDelegate.swift in Sources */,
+				BC2F9AC21D5CBA58004CEB8B /* EventMonitor.swift in Sources */,
+				BCD05C221D6C47F600B034E4 /* LineNumberView.swift in Sources */,
+				BC2F9AC71D5CBB5E004CEB8B /* QuickNoteViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC04E1431D774CC2002EE0D9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC04E1441D774CC2002EE0D9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		BCA87C9A1D6DCC5A001CEDF7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCA87C9B1D6DCC5A001CEDF7 /* Base */,
+			);
+			name = MainMenu.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC04E1481D774CC2002EE0D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AutoLaunchHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onurersen.mirabilis.AutoLaunchHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BC04E1491D774CC2002EE0D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AutoLaunchHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onurersen.mirabilis.AutoLaunchHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BC2F9ABC1D5CB38E004CEB8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC2F9ABD1D5CB38E004CEB8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BC2F9ABF1D5CB38E004CEB8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Mirabilis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onurersen.mirabilis.Mirabilis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		BC2F9AC01D5CB38E004CEB8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Mirabilis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onurersen.mirabilis.Mirabilis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC04E1471D774CC2002EE0D9 /* Build configuration list for PBXNativeTarget "AutoLaunchHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC04E1481D774CC2002EE0D9 /* Debug */,
+				BC04E1491D774CC2002EE0D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC2F9AAC1D5CB38D004CEB8B /* Build configuration list for PBXProject "Mirabilis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2F9ABC1D5CB38E004CEB8B /* Debug */,
+				BC2F9ABD1D5CB38E004CEB8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC2F9ABE1D5CB38E004CEB8B /* Build configuration list for PBXNativeTarget "Mirabilis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2F9ABF1D5CB38E004CEB8B /* Debug */,
+				BC2F9AC01D5CB38E004CEB8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC2F9AA91D5CB38D004CEB8B /* Project object */;
+}

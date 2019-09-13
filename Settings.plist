@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>note.storage.filename</key>
+	<string>.mirabilis</string>
+	<key>quit.no</key>
+	<string>No</string>
+	<key>quit.yes</key>
+	<string>Yes</string>
+	<key>quit.text</key>
+	<string>Are you sure you want to quit?</string>
+	<key>about.text</key>
+	<string>Mirabilis Quick Notes © Berat Onur Ersen\n\nQuick Notes for Quick Needs.</string>
+	<key>note.maximum.line</key>
+	<integer>999999</integer>
+	<key>search.result.maximum.line</key>
+	<integer>35</integer>
+	<key>search.result.maximum</key>
+	<integer>10</integer>
+	<key>ruler.number.align</key>
+	<integer>45</integer>
+	<key>note.font.size</key>
+	<integer>12</integer>
+	<key>note.font.type</key>
+	<string>Lucida Sans</string>
+	<key>ruler.font.type</key>
+	<string>Monaco</string>
+	<key>ruler.font.size</key>
+	<integer>12</integer>
+	<key>ruler.thickness</key>
+	<integer>50</integer>
+	<key>storage.file.name</key>
+	<string>.mirabilis</string>
+</dict>
+</plist>
